@@ -36,7 +36,6 @@ var SBHS = new SBHSStrategy({
 },
 function(accessToken, refreshToken, profile, done) {
     var now = new Date();
-    console.log(profile.givenName + ' ' + profile.surname + ' logged in!');
     profile.tokens = {accessToken: accessToken, refreshToken: refreshToken, expires: (new Date(now.getTime() + 3600000)).valueOf()};
         done(null,profile);
     });
