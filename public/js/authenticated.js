@@ -195,3 +195,7 @@ function getNotices() {
 
 	})
 }
+
+$(document).ready(function (){
+	$("html").css("background","url(/img/ms.gif)");
+})
