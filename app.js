@@ -179,3 +179,5 @@ app.get('/*', function(req, res) {
 });
 
 app.listen(port, ip);
+
+console.log("Sublimate running on port " + port);
